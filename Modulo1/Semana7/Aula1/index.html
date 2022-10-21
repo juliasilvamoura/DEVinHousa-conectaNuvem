@@ -1,0 +1,39 @@
+<script src="https://unpkg.com/vue@3"></script> 
+
+<div id="app">
+    <div>
+        <h1 class="texto">Prmeiro Contato com Vue JS!</h1>
+    </div>
+    <div class="main">
+        <div>
+            <p class="texto">Digite seu nome:</p>
+            <input id="cx_texto_nome" type="text" v-bind:placeholder="placeHolderUnput" v-model="nomeAluno">
+            <input type="text" v-bind:placeholder="placeHolderUnput" v-model="nomeAluno">
+            <button @click="exibirMensagem">Teste</button>
+        </div>
+        <div v-if="nomeAluno">
+            <p class="texto">{{ nomeAluno }}, Bem-Vindo(a) ai mundo VueJS</p>
+        </div>
+        <div v-else>
+            <p>Não existe mensagem</p>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    Vue.createApp({
+      data(){ // uma função
+          return {
+              placeHolderUnput: "mensagem",
+              nomeAluno: null
+          }
+      },
+      methods:{
+          exibirMensagem(){
+              alert('teste')
+          }
+      }
+
+    }).mount('#app')
+</script>

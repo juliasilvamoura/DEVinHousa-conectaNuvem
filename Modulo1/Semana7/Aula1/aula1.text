@@ -1,0 +1,8 @@
+O Vue tem suas proprias palavras reservadas 
+
+v-if
+v-else
+v-for
+v-bind
+v-model
+v-show

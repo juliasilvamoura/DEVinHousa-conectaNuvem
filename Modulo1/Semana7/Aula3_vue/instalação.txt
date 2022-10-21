@@ -1,0 +1,8 @@
+instala: npm install - g @vue/cli o -g é para ser global
+
+Criar projeto: vue create NomeMeuProjeto
+criar com vue 3
+
+Para executar: npm run serve
+
+add lintOnSave:false" no arquivo vue.config.js  senão da erro
