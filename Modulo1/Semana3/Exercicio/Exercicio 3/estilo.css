@@ -1,0 +1,56 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    margin: 50px auto;
+    padding: 80px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 60%;
+    height: auto;
+}
+
+.botao{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.entradaValores{
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+input{
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    color: rgb(214, 11, 153);
+}
+
+button{
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(230, 132, 148);
+    font-size: 15px;
+    font-weight: bold;
+    color: bisque;
+    padding: 10px;
+}
+
+.sair{
+    display: flex;
+    justify-content: center;
+}
