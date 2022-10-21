@@ -1,0 +1,78 @@
+/* Box sizing soma a largura e altura dos elementos sem somar as bordas juntas*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    
+}
+
+.header {
+    background-color: rgb(223, 223, 223);
+    padding: 20px;
+    text-align: center; /* Coloca texto no centro*/
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: rgb(19, 12, 26);
+}
+
+.navbar a{
+    float: left; /* Ficar a esquerda*/
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: rgb(235, 206, 164);
+    color: aqua;
+}
+
+.column.middle h2, p{
+    text-align: center;
+}
+
+.column{
+    float: left;
+    padding: 10px;
+}
+
+.column.side{
+    width: 25%;
+}
+
+.column.middle{
+    width: 50%;
+}
+
+.row:after{ /* Limpa os floats depois das colunas - o row é como se fosse uma funcionalidade - tipo uma função */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer p{
+    background-color: rgb(19, 12, 26);
+    text-align: center;
+    padding: 10px;
+    color: white;
+    float: left;
+    /*
+    position: fixed;
+    bottom: 0;
+    */
+    /*display: inline-table;*/
+    width: 100%;
+}
+
+/* Propriedade de midia query - para não perder a resolução e ficar com a largura maxima de 100% */
+@media screen and (max-width:600px){
+    .column.side, .column.middle{
+        width: 100%;
+    }
+};

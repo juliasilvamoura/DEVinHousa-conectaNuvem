@@ -1,0 +1,44 @@
+body,
+p   {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;      /* tamanho da fonte */
+    font-style: italic;     /* estilo */
+    color: rgb(80, 78, 78); /* cor do texto */
+    text-align: center;     /* alinhamento */
+}
+
+.principal {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 200px 860px 150px;
+    grid-template-areas: "cabecalho cabecalho" 
+			 "secao barra-lateral"
+                         "rodape rodape";
+}
+
+header {
+   grid-area: cabecalho;
+   background-color: #fff;
+}
+
+section {
+    grid-area: secao barra-lateral;
+    background-color: #fff;
+ }
+
+
+ footer {
+    grid-area: rodape;
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+
+ .parte2 {
+    width: 100%;
+    margin: 0 2px;
+ }
+
