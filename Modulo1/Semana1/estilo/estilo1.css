@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 175);
+    padding-top: 38px; /* Tamanho do nav, para não ocultar o titulo "Semana 1"*/
+    padding-bottom: 28px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+}
+
+nav {
+    position: fixed; /* Set the navbar to fixed position o padrão é static */
+    top: 0; /* Position the navbar at the top of the page */
+    left: 0;
+    right: 0;
+    background-color: brown
+}
+
+nav ul {
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px; /* Espaço entre itens*/ 
+  }
+
+  nav ul li a{
+    color: white;
+    transition: background-color 300ms, color 300ms; 
+  }
+
+  nav a:hover{ /* Seleciona todos os a com o mouse em cima*/
+    background-color: orange;
+  }
+
+
+h1{
+    margin: 10px 0;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(78, 33, 33);
+    background-color: rgb(252, 252, 132);
+    text-align: center;
+    background-image: url("/src/icon.png");
+    background-repeat: no-repeat; /* Não repetir a imagem*/
+    background-size: cover; /* Imagem cubra todo o fundo*/
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.texto{
+    font-size: 14px;
+}
+
+img {
+    max-width: 100px;
+}
+
+button{
+    padding: 10px;
+    border: solid 2px black;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+iframe{
+    margin: 0 auto;
+}
+
+footer{
+    margin-top: 10px;
+    padding: 5px;
+    background-color: rgb(214, 185, 54);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: rgb(155, 61, 61);
+    text-align: center;
+
+}
+
