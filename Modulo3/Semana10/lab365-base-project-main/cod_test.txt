@@ -1,0 +1,3 @@
+npm run unit:Test
+npm run unit:test
+npm run test:unit tests/unit/exercicio-exemplo-js.spec.js
