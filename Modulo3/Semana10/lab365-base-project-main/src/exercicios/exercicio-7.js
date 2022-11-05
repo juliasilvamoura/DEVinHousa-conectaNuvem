@@ -13,5 +13,5 @@ export const verificaPalavraNoTexto = (texto, palavra) => {
 
   return texto
     .split(" ")
-    .includes((palavraDoTexto) => palavraDoTexto === palavra);
+    .some((palavraDoTexto) => palavraDoTexto === palavra);
 };
