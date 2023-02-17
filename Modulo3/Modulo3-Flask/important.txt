@@ -1,0 +1,26 @@
+iniciar projeto pra funcionar:
+poetry config --local virtualenvs.in-project true
+poetry install
+
+iniciar banco:
+poetry run flask db init
+poetry run flask db migrate
+poetry run flask db upgrade
+
+popular banco:
+poetry run flask populate_db
+
+pytest:
+poetry add --dev pytest pytest-flask pytest-cov 
+
+rodar testes:
+pytest tests -v
+
+rodar e ver o código em porcentagem dos testes:
+pytest tests -v --cov
+
+Gerar relatório:
+coverage html
+
+Abrir relatório:
+source htmcov/index.html
