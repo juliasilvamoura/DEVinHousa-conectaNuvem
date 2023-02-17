@@ -1,0 +1,11 @@
+instalar o http-server
+
+npm install -g http-server
+
+rodar a aplicação 
+
+http-server
+
+rodar a apricação sem ficar reiniciando por causa do cache
+
+http-server -c1

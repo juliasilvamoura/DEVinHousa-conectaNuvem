@@ -1,0 +1,12 @@
+x = input("Entre com o primeiro valor String: ")
+y = input("Entre com o segundo valor String: ")
+z = x + y
+ultima_posicao = len(y)
+print("Tamanho dos valores")
+print(len(x))
+print(len(y))
+print(3*x)
+print(x in z)
+print(y in z)
+print("Primeira posição x: " + x[0])
+print("Ultima posição x: " + y[ultima_posicao-1])
